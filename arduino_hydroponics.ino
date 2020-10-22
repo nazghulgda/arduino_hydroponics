@@ -1,5 +1,3 @@
-// shitty comment
-
 /*************************************************** 
   This is an example for the Adafruit CC3000 Wifi Breakout & Shield
 
