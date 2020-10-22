@@ -7,3 +7,5 @@ This is a repo to teach my friend how to work with arduino (and clones), and at 
   - GravityTDS - 
   - DFRobot_PH - 
   - Moisture sensor -
+  
+  damn
