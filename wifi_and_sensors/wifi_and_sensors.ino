@@ -60,6 +60,8 @@ float tdsValue = 0;
 float voltage,phValue,temperature = 25;
 DFRobot_PH ph;
 
+const int ledPin = 13;       // the pin that the LED is attached to
+
 
 
 /**************************************************************************/
@@ -70,6 +72,9 @@ DFRobot_PH ph;
 /**************************************************************************/
 void setup(void)
 {
+
+  pinMode(ledPin, OUTPUT);  // initialize LED as output
+  
   Serial.begin(115200);
   Serial.println(F("Hello, CC3000!\n")); 
 
@@ -227,6 +232,15 @@ void loop(void)
   Serial.print(tdsValue,0);
   Serial.println("ppm");
   delay(1000);
+
+  if (tdsValue > 10) {
+    digitalWrite(ledPin, HIGH);
+  }
+  else {
+    digitalWrite(ledPin, LOW);
+  }
+
+  delay(2000);
 
   static unsigned long timepoint = millis();
   if(millis()-timepoint>1000U)  //time interval: 1s
