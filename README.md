@@ -9,3 +9,5 @@ This is a repo to teach my friend how to work with arduino (and clones), and at 
   - Moisture sensor -
   
   damn
+
+  Project suspended due to other importand things ;)
